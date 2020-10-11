@@ -1,0 +1,41 @@
+{% load static %}
+<html>
+<head>
+<title>Fake Profiles Detection</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="black" size=6><b>Facebook Fake Profiles Detection using Artificial Neural Network</b></font></h1>
+	  <marquee><font color="black" size=4>Fake Profiles Detection</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'Admin' %}">Admin</a></li>
+      <li><a href="{% url 'User' %}">Users</a></li>
+      
+   </ul>
+  </div>
+  <div class="page" id="bgindex" >
+   
+    <p><img src="{% static 'images/sample.jpg' %}" alt="" width="500" height="200" class="center" style="margin-left: 370px; padding-top: 55;" /></p>
+    <!--<h3 style="font-size: large; margin-left: 300px;">ABSTRACT:</h3>-->
+    <p style="font-size: medium;margin-left: 300px;margin-right: 200px; color: black;" style="text-align: center;">
+
+     This application is to detect Facebook fake profiles using ANN. The accuracies of ANN and SVM models are obtained. The user can provide details of a profile to check its genuinity.
+     
+
+    </p> 
+  </div>
+   <div>
+  
+</body>
+</html>

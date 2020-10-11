@@ -1,0 +1,52 @@
+{% load static %}
+<html>
+<head>
+<title>Fake Profiles Detection</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">window.setTimeout("document.getElementById('mine').style.display='none';", 20000); </script> 
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="black" size=6>Facebook Fake Profiles Detection using Artificial Neural Network</font></h1>
+	  <marquee><font color="black" size=4>Fake Profiles Detection</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="{% url 'GenerateModel' %}">Generate Models</a></li>
+      <li><a href="{% url 'ViewTrain' %}">View Trained Dataset</a></li>
+      <li><a href="{% url 'index' %}">Logout</a></li>
+      
+   </ul>
+  </div>
+  <div id="page">
+   <div id="content" style="margin-top:-30px;">
+      <div class="post">
+        
+        <div class="entry" id="bgadl">
+          <h2 style="text-align: center;"> Fake profile Detection</h2>
+          <p><img id="mine" src="{% static 'images/loading.gif' %}" alt="" width="50" height="50" class="center" style="margin-left: 570px;" /></p>
+           
+          
+		 <br/><br/><br/>
+<center><font size="4" color="black">{{ data }}</font></center>
+<center><font size="4" color="black">{{ data1 }}</font></center>
+	 
+	 <br>
+          <p><img src="{% static 'images/sample.jpg' %}" alt="" width="500" height="200" class="center" style="margin-left: 370px;" /></p>
+         
+     
+       
+       
+    </div>
+    
+  </div>
+
+</body>
+</html>
